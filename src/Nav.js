@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Nav({ dogs }) {
   return (
-    <div>{dogs.map(d => <Link to={`dogs/${ d }`}>{d}</Link>)}</div>
+    <div>{dogs.map(d => <Link key={d} to={`dogs/${ d }`}>{d}</Link>)}</div>
   );
 }
 
