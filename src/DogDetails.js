@@ -8,8 +8,10 @@ function DogDetails({ dogs }) {
     <div>
       {dog
         ? <div>
-          <div>{dog.name}</div>
-          <div>{dog.age}</div>
+          <h1>{dog.name}</h1>
+          <div>Age: {dog.age}</div>
+          <img src={`/${ dog.src }.jpg`} width="200px" />
+          {dog.facts.map((f, i) => <div key={i}>{f}</div>)}
         </div>
         : <div>Dog not found</div>
       }

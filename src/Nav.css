@@ -1,0 +1,7 @@
+#sidebar a.active {
+  color: red;
+}
+
+.unselected {
+  color: green;
+}
